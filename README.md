@@ -29,3 +29,12 @@ To run this application locally, follow these steps:
 3. Open the index.html file in your preferred web browser.
 
 4. You can now enter passwords to check their strength.
+
+
+
+Technologies Used:
+
+    HTML: For creating the structure of the web page.
+    CSS: For styling the web page and user interface.
+    JavaScript: For implementing the password strength checking logic.
+    Git: For version control.
