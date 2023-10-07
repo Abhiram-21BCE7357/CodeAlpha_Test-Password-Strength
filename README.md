@@ -20,15 +20,15 @@ To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine:
 
-   git clone https://github.com/Abhiram-21BCE7357/password-strength-checker.git
+   git clone https://github.com/Abhiram-21BCE7357/CodeAlpha_Test-Password-Strength.git
 
-2. Navigate to the project directory:
+3. Navigate to the project directory:
 
     cd password-strength-checker
 
-3. Open the index.html file in your preferred web browser.
+4. Open the index.html file in your preferred web browser.
 
-4. You can now enter passwords to check their strength.
+5. You can now enter passwords to check their strength.
 
 
 
