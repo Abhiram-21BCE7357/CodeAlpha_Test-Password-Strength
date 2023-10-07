@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Include custom CSS styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title -->
+    <title>Password Strength Checker</title>
+</head>
+
+<!-- Body -->
+<body>
+    <header>
+        <h1  style="color:#9acd32">Pass Secure - Your Password Strength Checker</h1>
+        <p><small>--- Empowering Stronger Passwords for a Safer Digital World ---</small></p>
+    </header>
+
+    <main>
+        <!-- Password input -->
+        <section id="password-input">
+            <label for="password"><h2>Verify your keys here</h2></label>
+            <p><b>Suggestions:</b> Stay clear of common names, dictionary phrases and personal information.</p>
+            <input type="password" id="password" placeholder="Enter the Password" oninput="checkPasswordStrength(this.value)">
+            <button id="show-password" onclick="togglePasswordVisibility()">Show Password</button>
+
+            <!-- Password strength meter -->
+            <div id="password-strength-meter">
+                <div id="strength-bar"></div>
+            </div>
+
+            <!-- Character count -->
+            <p align="center">Password Length: <span id="password-length"; style="color:#9acd32">0</span></p>
+
+            <!-- Password Strength -->
+            <p align="center">Password Strength: <span id="password-strength"; style="color:#9acd32">N/A</span></p>     
+            
+            <!-- Character type -->
+            <p>Password Character Types:</0>
+                <ul> 
+                    <li>Uppercase letters: <span id="uppercase"; style="color:#9acd32">-</span></li>
+                    <li>Lowercase letters: <span id="lowercase"; style="color:#9acd32">-</span></li>
+                    <li>Numbers: <span id="numbers"; style="color:#9acd32">-</span></li>
+                    <li>Special characters: <span id="special"; style="color:#9acd32">-</span></li>
+                </ul>
+
+                <!-- Estimated Time to Crack -->
+                <p align="center">Time to crack password: <span id="time-to-crack"; style="color:#9acd32">Unknown</span></p>
+        </section>
+        
+        <!-- About -->
+        <section id="About">
+            <h2 style="color:#9acd32">About This Pass Secure:</h2>
+            <p>PassSecure is your go-to tool for evaluating the strength of your passwords. Our user-friendly web application assesses your passwords based on a range of criteria, ensuring that your online accounts remain secure.</p>
+        </section>
+
+        <!-- How does it work? -->
+        <section id="How">
+            <h2 style="color:#9acd32">How Does It Work?</h2>
+            <ul>
+                <li><b>Password Input:</b> Users type their selected password in the input box.</li>
+                <li><b>Real-time evaluation:</b> The program assesses the password as users input.</li>
+                <li><b>Character Types:</b> Uppercase, lowercase, numerals, and special characters are all checked for.</li>
+                <li><b>Strength Evaluation:</b> The strength of the password is determined based on these variables.</li>
+                <li><b>Color-Coded Meter:</b> A progress bar with different colors represents the strength graphically.</li>
+                <li><b>Time to Crack:</b> Estimates the amount of time it would take to break the password.</li>
+              </ul>
+        </section>
+
+        <!-- What makes a password strong? -->
+        <section id="What">
+            <h2 style="color:#9acd32">What Makes a Strong Password?</h2>
+            <ul>
+                <li>Usually, a strong password has at least 12 characters.</li>
+                <li>There are both capital and lowercase characters in it.</li>
+                <li>It includes numeric values and symbols like!, @, #, and $.</li>
+                <li>It stays away from utilizing information that is simple to guess, such names or common terms.</li>
+                <li>It doesn't employ patterns that are simple to decipher, such "12345" or "password."</li>
+              </ul>
+        </section>
+
+        <!-- Why does password strength matters? -->
+        <section id="Why">
+            <h2 style="color:#9acd32">Why Does Password Strength Matter?</h2>
+            <p>Strong passwords are important because weak passwords provide a serious security risk. They are readily guessable or crackable, making your online accounts and personal data susceptible to intrusion. On the other side, strong passwords offer a crucial layer of protection against cyberattacks and safeguard your digital identity, sensitive information, and financial assets. To protect your online identity and preserve privacy in today's linked world, you must take password security seriously.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="color:#9acd32">&copy; 2023 Pass_Secure. All rights reserved.</p>
+    </footer>
+
+    <!-- Include custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
