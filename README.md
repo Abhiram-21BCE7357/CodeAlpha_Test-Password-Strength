@@ -20,7 +20,7 @@ To run this application locally, follow these steps:
 
 1. Clone this repository to your local machine:
 
-   git clone https://github.com/your-username/password-strength-checker.git
+   git clone https://github.com/Abhiram-21BCE7357/password-strength-checker.git
 
 2. Navigate to the project directory:
 
